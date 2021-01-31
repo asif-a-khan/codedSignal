@@ -28,34 +28,10 @@ export default function App() {
         //   title: "Let's Sign Up"
         // }}
         />
-        <Stack.Screen 
-        name='Register' 
-        component={RegisterScreen}
-        // options={{
-        //   title: "Let's Sign Up"
-        // }}
-        />
-        <Stack.Screen 
-        name='Home' 
-        component={HomeScreen}
-        // options={{
-        //   title: "Let's Sign Up"
-        // }}
-        />
-        <Stack.Screen 
-        name='AddChat' 
-        component={AddChatScreen}
-        // options={{
-        //   title: "Let's Sign Up"
-        // }}
-        />
-        <Stack.Screen 
-        name='Chat' 
-        component={ChatScreen}
-        // options={{
-        //   title: "Let's Sign Up"
-        // }}
-        />
+        <Stack.Screen name='Register' component={RegisterScreen} />
+        <Stack.Screen name='Home' component={HomeScreen} />
+        <Stack.Screen name='AddChat' component={AddChatScreen} />
+        <Stack.Screen name='Chat' component={ChatScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )

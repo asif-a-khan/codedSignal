@@ -20,7 +20,7 @@ const CustomListItem = ({ id, chatName, enterChat }) => {
   }, []);
 
   return (
-    <ListItem key={id} onPress={() => enterChat(id, chatName)} bottomDivider>
+    <ListItem containerStyle={styles.container} key={id} onPress={() => enterChat(id, chatName)} bottomDivider>
       <Avatar
         rounded
         source={{
@@ -30,11 +30,11 @@ const CustomListItem = ({ id, chatName, enterChat }) => {
         }}
       />
       <ListItem.Content>
-        <ListItem.Title style={{ fontWeight: "800" }}>
+        <ListItem.Title style={{ fontWeight: "800", color: 'white' }}>
           {chatName}
         </ListItem.Title>
         {chatMessages?.length > 0 && (
-          <ListItem.Subtitle numberOfLines={1} ellipsizeMode="tail">
+          <ListItem.Subtitle style={{ color: 'white' }} numberOfLines={1} ellipsizeMode="tail">
             {chatMessages?.[0]?.displayName}: {chatMessages?.[0]?.message}
           </ListItem.Subtitle>
         )}
@@ -45,4 +45,9 @@ const CustomListItem = ({ id, chatName, enterChat }) => {
 
 export default CustomListItem;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#363636',
+    borderColor: 'black'
+  }
+});

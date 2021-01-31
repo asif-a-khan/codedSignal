@@ -40,6 +40,7 @@ const RegisterScreen = ({ navigation }) => {
       </Text>
       <View style={styles.inputContainer}>
         <Input
+          style={styles.input}
           placeholder="Full Name"
           autoFocus
           type="text"
@@ -47,12 +48,14 @@ const RegisterScreen = ({ navigation }) => {
           onChangeText={(text) => setName(text)}
         />
         <Input
+          style={styles.input}
           placeholder="Email"
           type="email"
           value={email}
           onChangeText={(text) => setEmail(text)}
         />
         <Input
+          style={styles.input}
           placeholder="Password"
           secureTextEntry={true}
           type="password"
@@ -60,6 +63,7 @@ const RegisterScreen = ({ navigation }) => {
           onChangeText={(text) => setPassword(text)}
         />
         <Input
+          style={styles.input}
           placeholder="Profile Picture URL (optional)"
           type="text"
           value={imageUrl}
@@ -87,7 +91,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     padding: 10,
-    backgroundColor: "white",
+    backgroundColor: "#272727",
   },
   button: {
     width: 200,
@@ -96,4 +100,7 @@ const styles = StyleSheet.create({
   inputContainer: {
     width: 300,
   },
+  input: {
+    color: 'white'
+  }
 });

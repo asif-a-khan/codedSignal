@@ -39,17 +39,19 @@ const LoginScreen = ({ navigation }) => {
           uri:
             "https://blog.mozilla.org/internetcitizen/files/2018/08/signal-logo.png",
         }}
-        style={{ width: 200, height: 200 }}
+        style={styles.logo}
       />
       <View style={styles.inputContainer}>
         <Input
+          style={styles.input}
           placeholder="Email"
-          autoFocus
+          // autoFocus
           type="email"
           value={email}
           onChangeText={(text) => setEmail(text)}
         />
         <Input
+          style={styles.input}
           placeholder="Password"
           secureTextEntry={true}
           type="password"
@@ -78,21 +80,26 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     padding: 10,
-    backgroundColor: "white",
+    backgroundColor: "#272727",
   },
   button: {
     width: 200,
     marginTop: 10,
+    color: 'white'
   },
   inputContainer: {
     width: 300,
   },
-  logo: {},
+  logo: {
+    height: 200,
+    width: 200
+  },
   input: {
-    width: 300,
-    padding: 30,
-    backgroundColor: "white",
-    borderRadius: 30,
-    marginBottom: 10,
+    // width: 300,
+    // padding: 30,
+    // backgroundColor: "white",
+    // borderRadius: 30,
+    // marginBottom: 10,
+    color: 'white'
   },
 });

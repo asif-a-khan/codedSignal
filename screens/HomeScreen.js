@@ -25,9 +25,9 @@ const HomeScreen = ({ navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: "Signal",
-      headerStyle: { backgroundColor: "#fff" },
-      headerTitleStyle: { color: "black" },
-      headerTintColor: "black",
+      headerStyle: { backgroundColor: '#272727' },
+      headerTitleStyle: { color: "white" },
+      headerTintColor: "white",
       headerLeft: () => (
         <View style={{ marginLeft: 20 }}>
           <TouchableOpacity activeOpacity={0.5}>
@@ -51,13 +51,13 @@ const HomeScreen = ({ navigation }) => {
           }}
         >
           <TouchableOpacity activeOpacity={0.5}>
-            <AntDesign name="camerao" size={24} color="black" />
+            <AntDesign name="camerao" size={24} color="white" />
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => navigation.navigate("AddChat")}
             activeOpacity={0.5}
           >
-            <SimpleLineIcons name="pencil" size={24} color="black" />
+            <SimpleLineIcons name="pencil" size={24} color="white" />
           </TouchableOpacity>
         </View>
       ),
@@ -108,8 +108,8 @@ const HomeScreen = ({ navigation }) => {
   };
 
   return (
-    <SafeAreaView>
-      <StatusBar style='dark' />
+    <SafeAreaView style={styles.parent}>
+      <StatusBar style='light' />
       <ScrollView style={styles.container}>
         {chats.map(({ id, data: { chatName } }) => (
           <CustomListItem
@@ -129,5 +129,9 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   container: {
     height: "100%",
+    backgroundColor: '#272727'
   },
+  parent: {
+    backgroundColor: '#272727'
+  }
 });

@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A messaging app inspired by Signal",
+    "githubUrl": "https://github.com/asif-a-khan/codedSignal"
   }
 }
