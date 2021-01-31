@@ -4,7 +4,7 @@
     "slug": "coded-signal",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/signal.png",
+    "icon": "./assets/coded-signal.png",
     "splash": {
       "image": "./assets/signal-logo.png",
       "resizeMode": "contain",
