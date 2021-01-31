@@ -64,7 +64,7 @@ const RegisterScreen = ({ navigation }) => {
         />
         <Input
           style={styles.input}
-          placeholder="Profile Picture URL (optional)"
+          placeholder="Any picture's URL (optional)"
           type="text"
           value={imageUrl}
           onChangeText={(text) => setImageUrl(text)}

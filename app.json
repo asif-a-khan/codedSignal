@@ -4,11 +4,11 @@
     "slug": "coded-signal",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/signal.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/signal-logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2C6BED"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,7 +17,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.codedkhan.coded-signal"
     },
     "android": {
       "adaptiveIcon": {
